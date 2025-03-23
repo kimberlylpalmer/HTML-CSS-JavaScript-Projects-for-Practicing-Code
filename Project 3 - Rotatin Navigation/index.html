@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>Rotating Navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Bernadoodle Puppy</h1>
+        <small>Author: Doggo Ipsum</small>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fuga,
+          quisquam voluptate optio nihil dicta cum nemo placeat accusantium
+          blanditiis est possimus, molestias quam porro aliquam! Molestiae
+          voluptatem quas odit architecto adipisci tenetur, quae, harum eos,
+          assumenda vel a quasi? Repellendus, sunt sapiente dolorum eos
+          voluptatum fuga ut doloremque nesciunt molestias aut numquam ipsum
+          quod qui consequatur in accusamus. Enim commodi, omnis dolorum
+          nesciunt quia ex est possimus a distinctio quidem? Quisquam quod dicta
+          totam hic enim. Eaque sed at velit provident quidem tempore omnis
+          deleniti sint odio commodi, aut, voluptatibus in sunt animi ut aperiam
+          praesentium dignissimos nostrum. Accusamus.
+        </p>
+
+        <h3>My Dog</h3>
+        <img
+          src="https://static.wixstatic.com/media/67d23f_872032b01a694bea85ec39afefabd3e5~mv2.png/v1/fill/w_403,h_408,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/67d23f_872032b01a694bea85ec39afefabd3e5~mv2.png"
+          alt="Bernadoodle puppy in the snow" />
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          iure ratione perspiciatis quo neque non sunt debitis ea! Rerum,
+          corporis. Libero odio, saepe pariatur ipsum ad maxime nisi harum quos
+          enim cupiditate optio eius debitis minus ut architecto necessitatibus
+          iste? Ipsam eaque aliquid quidem voluptas? Magnam blanditiis
+          voluptates voluptatum dolore at, perspiciatis aliquid beatae! Minima
+          quod laborum tempore nam corporis qui dolore eius aperiam est ullam
+          praesentium laudantium dolor nostrum, nulla voluptas facere pariatur
+          quidem!
+        </p>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i> Home</li>
+        <li><i class="fas fa-user-alt"></i> About</li>
+        <li><i class="fas fa-envelope"></i> Contact</li>
+      </ul>
+    </nav>
+
+    <script >
+      const open = document.getElementById("open");
+const close = document.getElementById("close");
+const container = document.querySelector(".container");
+
+open.addEventListener("click", () => container.classList.add("show-nav"));
+close.addEventListener("click", () => container.classList.remove("show-nav"));
+
+    </script>
+  </body>
+</html>
