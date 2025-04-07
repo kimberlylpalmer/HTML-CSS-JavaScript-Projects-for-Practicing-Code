@@ -27,6 +27,7 @@ nav {
   padding: 20px;
   width: 80px;
   display: flex;
+
   align-items: center;
   justify-content: center;
   border-radius: 3px;
@@ -40,6 +41,7 @@ nav.active {
 
 nav ul {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
   padding: 0px;
   margin: 0;
@@ -52,14 +54,14 @@ nav.active ul {
 }
 
 nav ul li {
-  transform: rotateY(0deg);
+  transform: rotateX(0deg);
   opacity: 0;
   transition: transform 1s linear, opacity 1s linear;
 }
 
 nav.active ul li {
   opacity: 1;
-  transform: rotateY(360deg);
+  transform: rotateX(360deg);
 }
 
 nav ul a {
@@ -95,6 +97,7 @@ nav ul a {
 .icon .line2 {
   top: auto;
   bottom: 10px;
+  background-color: red;
 }
 
 nav.active .icon .line1 {
