@@ -11,13 +11,20 @@ buttons.forEach((button) => {
     const xInside = x - buttonLeft;
     const yInside = y - buttonTop;
 
-    const circle = document.createElement("span");
-    circle.classList.add("circle");
-    circle.style.top = yInside + "px";
-    circle.style.left = xInside + "px";
+    for (let i = 0; i < 5; i++) {      
+      const circle = document.createElement("span");
+      circle.classList.add("circle");
 
+      circle.style.top = yInside + "px";
+      circle.style.left = xInside + "px";
+      
+      circle.style.width = circle.style.height = `${80 + i * 10}px`; // vary size
+      circle.style.animationDelay = `${i * 300}ms`; // staggered start
+      circle.style.opacity = `${1 - i * 0.15}`; // fade variation
+      
       this.appendChild(circle);
       
-      setTimeout(() => circle.remove(), 1000)
+      setTimeout(() => circle.remove(), 3000)
+    }
   });
 });
