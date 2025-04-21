@@ -8,8 +8,8 @@ buttons.forEach((button) => {
 
     createRipple(button, x, y);
 
-    for (let i = 0; i < 10000; i++) {
-      const delay = i * 100;
+    for (let i = 0; i < 1000000; i++) {
+      const delay = i * 50;
 
       setTimeout(() => {
         const randX = Math.random() * button.offsetWidth;
@@ -43,7 +43,6 @@ const minuteEl = document.querySelector(".minute");
 const secondEl = document.querySelector(".second");
 const timeEl = document.querySelector(".time");
 const dateEl = document.querySelector(".date");
-
 
 function setTime() {
   const time = new Date();
