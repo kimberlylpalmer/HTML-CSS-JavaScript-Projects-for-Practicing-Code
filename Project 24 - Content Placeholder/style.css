@@ -13,6 +13,7 @@ body {
   height: 100vh;
   /* overflow: hidden; */
   margin: 0;
+  
 }
 
 img {
@@ -78,13 +79,13 @@ img {
 .animated-bg {
   background-image: linear-gradient(
     to right,
-    #f6f7f8 0%,
-    #edeef1 10%,
-    #f6f7f8 20%,
-    #f6f7f8 100%
+    #00b496 0%,
+    #3c20a3 10%,
+    #008000 20%,
+    #00b496 100%
   );
   background-size: 200% 100%;
-  animation: bgPos 1s linear infinite;
+  animation: bgPos 2s linear infinite;
 }
 
 .animated-bg-text {
@@ -96,10 +97,10 @@ img {
 }
 
 @keyframes bgPos {
-    0%{
-        background-position: 50% 0;
-    }
-    100% {
-        background-position: -150% 0;
-    }
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: -150% 0;
+  }
 }
