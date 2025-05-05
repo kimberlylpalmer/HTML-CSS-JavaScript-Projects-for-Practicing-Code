@@ -43,6 +43,13 @@ body {
     margin-top: -300px;
 }
 
+.left-side p {
+    font-size: 25px;
+    color: white;
+    opacity: 50%;
+    
+}
+
 .right-side {
     height: 100%;
     position: absolute;
