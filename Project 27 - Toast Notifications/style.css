@@ -22,6 +22,7 @@ body {
   color: rebeccapurple;
   font-family: inherit;
   font-weight: bold;
+  font-size: 30px;
   padding: 1rem;
   border-radius: 5px;
   border: none;
@@ -33,7 +34,7 @@ body {
 }
 
 .btn:active {
-  transform: scale(0.9);
+  transform: scale(0.5);
 }
 
 #toasts {
@@ -46,7 +47,7 @@ body {
 }
 
 .toast {
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   padding: 1rem 2rem;
   margin: 0.5rem;

@@ -1,18 +1,11 @@
 const button = document.getElementById("button");
 const toasts = document.getElementById("toasts");
 
-const messages = [
-  "Message One",
-  "Message Two",
-  "Message Three",
-  "Message Four",
-];
+const messages = ["Good Job", "Oh No!", "That's Not Right", "Hooray!"];
 
 const types = ["info", "success", "error"];
 
-button.addEventListener("click", () =>
-  createNotification()
-);
+button.addEventListener("click", () => createNotification());
 
 function createNotification(message = null, type = null) {
   const notif = document.createElement("div");
@@ -25,7 +18,7 @@ function createNotification(message = null, type = null) {
 
   setTimeout(() => {
     notif.remove();
-  }, 3000);
+  }, 9000);
 }
 
 function getRandomMessage() {
