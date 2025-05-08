@@ -66,7 +66,20 @@ function generatePassword(lower, upper, number, symbol, length) {
     
     // Need to figure out how to randomize the password so it doesn't always come in order
     
-    return finalPassword
+    return shuffleText(finalPassword)
+}
+
+function shuffleText(text) {
+    const array = text.split('')
+    let currentIndex = array.length, randomIndex;
+
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+
+    return array.join('');
 }
 
 function getRandomLower() {
