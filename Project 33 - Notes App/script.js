@@ -54,7 +54,8 @@ function addNewNote(text = "") {
 
 
 
-  document.body.appendChild(note);
+    //   document.body.appendChild(note); Use the code below instead of this line of code, the language has been updated
+    document.getElementById('notes-container').appendChild(note);
 
 }
 
